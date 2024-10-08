@@ -10,3 +10,8 @@ And I will sometimes write in russian
 ![Fumo](https://github.com/user-attachments/assets/9a95db8b-7cc0-43ac-a225-6b87792efa10)
 
 
+Main member in my team!!!
+> [Velainet](https://github.com/Velainet)
+> Im admin in this team
+>
+> 
