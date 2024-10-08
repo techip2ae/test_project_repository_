@@ -13,7 +13,6 @@ int main()
         while ((s-1) < u){
             cout << ("numbers....cool = ") << s << endl;
             s=s-1;
-            s=0;
            } 
  }
  else            
