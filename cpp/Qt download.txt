@@ -1,0 +1,14 @@
+Устанавливаем Msys2
+https://github.com/msys2/msys2-installer/releases/download/2024-07-27/msys2-x86_64-20240727.exe
+
+открываем C:\msys64\ucrt64.exe
+и обновляем базы данных:
+pacman -Syu
+
+и устанавливаем Qt:
+pacman -S base base-devel mingw-w64-x86_64-toolchain mingw-w64-x86_64-qt-creator mingw-w64-x86_64-qt6-static mingw-w64-x86_64-cmake mingw-w64-x86_64-clang mingw-w64-x86_64-cc mingw-w64-x86_64-clang mingw-w64-x86_64-qt5-static  mingw-w64-x86_64-vulkan-headers mingw-w64-x86_64-python mingw-w64-x86_64-clang-tools-extra
+(дада, эту хрень надо скопировать)
+
+и потом крепим куда надо файл C:\msys64\mingw64\bin\qtcreator.exe 
+
+вот, у вас халявная Qt creator
