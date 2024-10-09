@@ -12,7 +12,12 @@ And I will sometimes write in russian
 
 Main member in my team!!!
 > [Velainet](https://github.com/Velainet)
+<<<<<<< HEAD
 
 
 [techima](https://github.com/techip2ae)
 > Im admin in this team
+=======
+admin in this team
+> [techima](https://github.com/techip2ae)
+>>>>>>> parent of 1fc6e97 (Merge branch 'main' of https://github.com/techip2ae/test_project_repository_ into techi_coding_OOP)
