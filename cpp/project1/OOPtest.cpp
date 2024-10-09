@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 
 using namespace std;
 
@@ -9,16 +8,17 @@ public:
     int age;
     string name;
 
+    void vice(int age_f, string name_f)
+    {
+        cout << "age: " << age << "\n" << "name: " << name << endl;
+    }
+
 };
 
 int main()
 {
     Humas grey;
 
-    grey.age = 12;
-    grey.name = "susu";
-
-    cout << "name: " << grey.name << endl;
-    cout << "age: " << grey.age << endl;
+    grey.vice(12, "susu");
 
 }
