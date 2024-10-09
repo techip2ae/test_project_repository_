@@ -1,21 +1,19 @@
 #include <iostream>
-
-using namespace std;
-
-class goga
-{
-public:
-    int size;
-    int go;
-};
-
+  
 int main()
 {
-    goga kicha;
-    int tyt;
-    cin >> tyt;
-
-    kicha.size = tyt;
-
-    cout << kicha.size;
+    char op = '*';
+    int n = 10;
+    switch(int k{2}; op)
+    {
+        case '+':
+            std::cout << n + k << std::endl;
+            break;
+        case '-':
+            std::cout << n - k << std::endl;
+            break;
+        case '*':
+            std::cout << n * k << std::endl;
+            break;
+    }
 }
