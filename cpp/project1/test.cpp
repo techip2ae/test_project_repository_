@@ -1,41 +1,29 @@
-#include <iostream> 
+#include <iostream>
+#define pfl(x)(cout << rand() % 10000 * x << endl)
+//#define NoEgorNotDump
+
 using namespace std;
 
 int main()
 {
-  int n, s=0, r=0, kok=1;
-  cout << "enter n quantity: ";
-  cin >> n;
-  int a[n];
+#ifdef NoEgorNotDump
+    pfl(4);
 
-  for (int j=1 ;j <= n; j++)
-  {
-    cout << "enter "<< j << " array element: ";
-    cin >> a[j];
-  }
-  
-  for (int j=1 ;j <= n; j++)
-  {
-    if (a[j] % 2 == 0)
+    cout << "Egor is dump" << endl;
+
+    for (int j=0 ; j<10 ; j++)
     {
-      s += a[j];
+        cout << "LoLoLoL" <<endl;
     }
-    if (a[j] < 0)
+#endif
+    int n;
+    int* arr = new int[n]{3, 3, 5, 23, -2};
+
+    for (int i{} ; i <= 10; i++)
     {
-      kok = kok * a[j];
-    } 
-    if (a[j] % 2 != 0)
-    {
-      r++;
+        cout << arr[i] << endl;
     }
-  }
 
-  for (int j=1 ;j <= n; j++)
-  {
-    cout << "A["<< j << "] = " << a[j] << endl;
-  }
+    delete [] arr;
 
-  cout << "sum of even numbers = "<< s << endl;
-  cout << "product of negative numbers = "<< kok << endl;
-  cout << "number of odd elements = "<< r << endl;
 }
