@@ -2,23 +2,38 @@
 
 using namespace std;
 
-class Humas
+class sysu
 {
+private:
+    int *x;
 public:
-    int age;
-    string name;
 
-    void vice(int age_f, string name_f)
+    sysu(int siz)
     {
-        cout << "age: " << age << "\n" << "name: " << name << endl;
+        this->x = new int[siz];
+        for(int i{};i<siz;i++)
+        {
+            x[i]= i;
+        }
+    };
+
+    void print(int siz)
+    {
+        cout << "x array=/" << endl;
+        for (int i{}; i < siz; i++)
+        {
+            cout << x[siz] << endl;
+        }
     }
+
+    ~sysu(){delete[] x;};
 
 };
 
+
+
+
 int main()
 {
-    Humas grey;
-
-    grey.vice(12, "susu");
-
+    sysu(5);
 }

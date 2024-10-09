@@ -3,26 +3,26 @@ using namespace std;
 
 int main()
 {
-  int n, s=0, r=0, kok=1;
+  int n, s= 0, r= 0, kok= 1;
   cout << "enter n quantity: ";
   cin >> n;
   int a[n];
 
-  for (int j=1 ;j <= n; j++)
+  for (int j= 1 ;j <= n; j++)
   {
     cout << "enter "<< j << " array element: ";
     cin >> a[j];
   }
   
-  for (int j=1 ;j <= n; j++)
+  for (int j= 1 ;j <= n; j++)
   {
     if (a[j] % 2 == 0)
     {
-      s += a[j];
+      s+= a[j];
     }
     if (a[j] < 0)
     {
-      kok = kok * a[j];
+      kok*= a[j];
     } 
     if (a[j] % 2 != 0)
     {
@@ -30,7 +30,7 @@ int main()
     }
   }
 
-  for (int j=1 ;j <= n; j++)
+  for (int j= 1 ;j <= n; j++)
   {
     cout << "A["<< j << "] = " << a[j] << endl;
   }
