@@ -11,7 +11,5 @@ And will sometimes write in russian
 
 
 admin in this team:
-```
-[techima](https://github.com/techip2ae)
-[Velainet](https://github.com/Velainet)
-```
+>[techima](https://github.com/techip2ae)
+>[Velainet](https://github.com/Velainet)
