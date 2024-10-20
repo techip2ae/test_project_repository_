@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-void fof(int j, int *n, int *arr)
+void fof(int i, int *arr)
 {
-    for (;j < *n; j++)
+    for (int j = 0; j <= i ; j++)
     {
         cout << arr[j] << "\t";
     }
@@ -11,22 +11,27 @@ void fof(int j, int *n, int *arr)
 
 int main()
 {
-    int *n, *m;
-    cin >> *n >> *m;
+    int np, mp;
+    cin >> np >> mp;
 
-    int *arr = new int[*n];
+    int *arr = new int[np];
 
-    for (int i = 0; i < *n ; i++)
+    for (int i = 0; i < np ; i++)
     {
-        arr[i] = rand() % *m;
+        arr[i] = 0;
     }
 
-    for (int i = 0; i < *n ; i++)
+    for (int i = 0; i < np ; i++)
     {
-        fof(i, n, arr);
+        arr[i] = rand() % mp;
+    }
+
+    for (int i = 0; i < np ; i++)
+    {
+        fof(i, arr);
         cout << "\n";
     }
 
-delete [] arr;
-    
+    delete[] arr;
+ 
 }
