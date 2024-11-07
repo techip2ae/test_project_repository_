@@ -5,35 +5,25 @@ using namespace std;
 class sysu
 {
 private:
-    int *x;
+    int x;
 public:
-
-    sysu(int siz)
+    int gag(int g)
     {
-        this->x = new int[siz];
-        for(int i{};i<siz;i++)
+        for(int j=0;this->x <= g; j++)
         {
-            x[i]= i;
+            this->x+= j + g;
         }
-    };
-
-    void print(int siz)
-    {
-        cout << "x array=/" << endl;
-        for (int i{}; i < siz; i++)
-        {
-            cout << x[siz] << endl;
-        }
+        return g;
     }
 
-    ~sysu(){delete[] x;};
-
+    int s_x(int x)
+    {
+        return x = this->x;
+    }
 };
-
-
 
 
 int main()
 {
-    sysu(5);
+
 }
